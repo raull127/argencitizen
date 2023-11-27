@@ -1,0 +1,483 @@
+:root {
+
+    --Azul: #003547;
+
+    --Verde_Oscuro: #005E54;
+
+    --AzulFondo: #001F33;
+
+    --OscursoNL: #334752;
+
+    --Claro: #CFDEE8;
+
+    --ClaroLetra: #00f0ff;
+}
+
+.twitter-timeline {
+    max-width: 100%;
+    max-height: 75vh;
+}
+
+* {
+    /* Asterisco: forzar que se aplique a todo, incluidos links*/
+    font-family: 'Maven Pro', 'Quicksand', sans-serif;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: var(--AzulFondo);
+    /* margin: 0; */
+    position: relative;
+    min-height: 100vh;
+    /* padding-bottom: 2em; */
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    /* arregla footer en teoria */
+}
+
+.contenedor img {
+    height: 20em;
+}
+
+hr {
+    height: 1px;
+    background-color: var(--AzulFondo);
+}
+
+.btn {
+    background-color: var(--AzulFondo);
+    height: 31px;
+    border: none;
+    padding: 0 20px;
+    color: var(--ClaroLetra);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--AzulFondo);
+    color: var(--ClaroLetra);
+}
+
+/* Estilos Header */
+
+header {
+    font-family: 'Maven Pro', sans-serif;
+    background-color: var(--Azul);
+    min-height: 80px;
+    line-height: 30px;
+    /* position: sticky;
+    top: 0; */
+    /*este parece que si alinea laas letras a la mitad de renglon*/
+    /* padding-top: 30px;  deberia hacer que los menues se alineen al header en responsive, pero no pasa */
+    border-bottom: var(--Azul) 3px solid;
+    display: flex;
+    /* Con este flex, la caja del header se ajusta a su contenido */
+}
+
+nav {
+    margin: 0;
+    float: right;
+    font-family: 'Maven Pro', 'Quicksand', sans-serif;
+}
+
+header li {
+    display: inline;
+    float: left;
+    padding: 0px 20px;
+}
+
+#logo {
+    float: left;
+
+
+}
+
+header a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* background-color: rgba(89, 159, 221, 0.055); */
+}
+
+header a:hover {
+    /* para cambiar color de texto interactivo cuando mouse pasa encima */
+    color: white;
+}
+
+.resaltado {
+    color: var(--Claro);
+    font-size: 1em;
+}
+
+.span_resaltado {
+    color: #001F33;
+}
+
+.span_resaltados {
+    color: var(--Claro);
+    font-weight: bold;
+}
+
+
+/* Estilos Vidriera */
+
+#vidriera {
+    background-image: url(img/seccion-aurea.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+#vidriera h2 {
+    font-size: 60px;
+    padding-top: 80px;
+}
+
+#vidriera p {
+    font-size: 30px;
+    padding: 2px 130px;
+}
+
+#newsletter {
+    background-color: var(--OscursoNL);
+    padding: 15px;
+    min-height: 35px;
+    display: flex;
+    color: var(--Claro);
+}
+
+#newsletter h3 {
+    float: left;
+    font-size: 24px;
+}
+
+#newsletter form {
+    float: right;
+    line-height: 35px;
+}
+
+#newsletter input {
+    padding: 4px;
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+#newsletter button {
+    background-color: #C2BB00;
+    height: 32px;
+    padding: 4px;
+    padding: 0 20px;
+    font-size: medium;
+    border-radius: 5px;
+    border: none;
+
+}
+
+#newsletter button:hover {
+    background-color: #ffa93f;
+    color: #003547;
+}
+
+
+/* Boxes */
+
+#boxes {
+    margin-top: 20px;
+    padding-bottom: 1em;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+#boxes img {
+    width: 340px;
+}
+
+hr {
+    margin: 2em;
+    color: aliceblue;
+}
+
+#boxes h5 {
+    font-size: 1.5em;
+    color: var(--ClaroLetra);
+}
+
+#boxes p {
+    font-size: 1em;
+    padding: 0 1.3em;
+    color: var(--Claro);
+}
+
+#boxes h4 {
+    margin-bottom: 0em;
+    margin-top: 0em;
+    font-size: 2.0em;
+    color: aliceblue;
+    font-weight: 100;
+}
+
+/* Somos */
+
+#vidriera_somos {
+    background-image: url(img/header1.jpg);
+    min-height: 200px;
+    line-height: 200px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+#vidriera_somos h1 {
+    font-size: 6em;
+    font-weight: lighter;
+    margin: 1em;
+}
+
+#somos {
+    padding-bottom: 80px;
+}
+
+article.texto_somos {
+    float: right;
+    max-width: 60%;
+    color: var(--ClaroLetra);
+}
+
+.texto_somos h3 {
+    color: var(--ClaroLetra);
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+.textos_somos {
+    color: var(--Claro);
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 30px;
+
+}
+
+.texto_somos p {
+    color: var(--Claro);
+    margin: 1em 0;
+    font-size: 1.3em;
+}
+
+aside.cuadrito {
+    float: left;
+    width: 35%;
+    height: 35em;
+    background-color: var(--Azul);
+    padding: 15px;
+    margin-top: 50px;
+    color: var(--ClaroLetra);
+    border-radius: 10px;
+}
+
+/* CONTACTO */
+
+#vidriera_contacto {
+    background-image: url(img/header.jpg);
+    min-height: 200px;
+    line-height: 200px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: chartreuse;
+}
+
+#vidriera_contacto h1 {
+    font-size: 8em;
+    font-weight: 400;
+}
+
+#contacto {
+    padding-bottom: 50px;
+}
+
+article.texto_contacto {
+    float: left;
+    max-width: 60%;
+}
+
+.texto_contacto h3 {
+    color: darkgreen;
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+.texto_contacto p {
+    color: darkred;
+    margin: 1em 0;
+    font-size: 1.3em;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+#locationG {
+    width: 100%;
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+
+    color: var(--Claro);
+    padding: 2em;
+    padding-top: 2em;
+    background-color: #003547;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    bottom: 0;
+
+}
+
+
+
+/* MEDIA QUERYS */
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding-bottom: 20px;
+    }
+
+    #logo,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+        margin-bottom: 1em;
+    }
+
+    header li {
+        padding: 0 0px;
+    }
+
+    header a {
+        padding: 10px 10px;
+    }
+
+    #vidriera h2 {
+        font-size: 50px;
+        padding-top: 40px;
+    }
+
+    #vidriera p {
+        font-size: 25px;
+        padding: 26px 10px;
+    }
+
+    #newsletter h3,
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #newsletter input {
+        width: 100%;
+        /* text-align: center; */
+        margin: 12px 0;
+    }
+
+    #newsletter button {
+        width: 100%;
+    }
+
+    #newsletter h3 {
+        font-size: 22px;
+    }
+
+    #boxes h4 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    #boxes .box {
+        float: none;
+        width: 100%;
+        margin: 10px;
+    }
+
+    /* Somos Media Query */
+
+    #vidriera_somos h1 {
+        font-size: 5em;
+    }
+
+    article.texto_somos {
+        float: none;
+        max-width: 100%;
+    }
+
+    aside.cuadrito {
+        float: none;
+        width: auto;
+        /* margin-top: 20px; MIO */
+        margin: 15px 0;
+    }
+
+    .texto_somos p {
+        margin: 1 em 0 0;
+    }
+
+
+    /* CONTACTO MEDIA QUERYS */
+
+    #vidriera_contacto h1 {
+        font-size: 5em;
+    }
+
+    article.texto_contacto {
+        float: none;
+        max-width: 100%;
+    }
+
+    .texto_contacto p {
+        margin: 1em 0 0;
+    }
+
+    .contacto input,
+    .contacto textarea {
+        width: 94%;
+        padding: 6px;
+        margin-bottom: 5px;
+    }
+
+    aside.cuadrito iframe {
+        width: 94%;
+    }
+
+}

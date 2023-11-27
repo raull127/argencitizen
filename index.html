@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="star,citizen,esa">
+    <meta name="description" content="Star Citizen is currently in the Alpha stage of development, being created in partnership with a
+    passionate, knowledgeable, and always-welcoming community.">
+    <meta property="og:image"
+        content="https://images.prismic.io/latelier-website/6915386c-2953-4985-bf0a-e59c2149f39c_SC-fb.jpg">
+
+    <link rel="stylesheet" href="css/styles0.css">
+    <link rel="stylesheet" href="css/styles1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;800&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>inicio</title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="contenedor">
+
+            <div id="logo">
+
+                <h1><a href="index.html" class="resaltado"> <span class="span_resaltado"> ARGEN</span>CITIZENS </a>
+                </h1>
+            </div>
+
+            <nav style="display: flex; position: relative; left: -1.4vh;">
+                <ul>
+
+                    <li><a href="index.html" class="resaltado">Inicio</a></li>
+
+                    <li><a href="galeria.html" class="resaltado">Galeria</a></li>
+                    <li><a href="nosotros.html" class="resaltado">Nosotros</a></li>
+                    <li><a href="contacto.html" class="resaltado">Contacto</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section id="slideshow">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/slideshow/lorville.jpg" style="width:100%" alt="Lorville">
+                <!-- <div class="text">Lorville</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/slideshow/area18.jpg" style="width:100%" alt="Area 18">
+                <!-- div class="text">Area 18</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/slideshow/microtech.jpg" style="width:100%" alt="Microtech">
+                <!-- <div class="text">Microtech</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/slideshow/orison.jpg" style="width:100%" alt="Orison">
+                <!-- <div class="text">Orison</div> -->
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+    </section>
+
+    <section id="boxes">
+
+        <div class="contenedor">
+
+            <h4>
+                Explora el Verso:
+            </h4>
+
+            <hr> <!-- Barra separadora, diferente a la otra-->
+
+            <div style="display: flex;flex-direction: row;justify-content: center;margin-bottom: 1em; flex-wrap: wrap;">
+
+                <div class="box">
+                    <img src="img/SC_04_Wallpaper_2048x2048.jpg" alt="Vehiculo">
+                    <h5>Explora</h5>
+                    <p>
+                        Persigue una vida en las estrellas.
+                        Se quien quieras ser y busca tu fortuna en el cosmos.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <img src="img/SC_06_Wallpaper_2048x2048.jpg" alt="Motor">
+                    <h5>Descubre</h5>
+                    <p>
+                        Encuentra desde lo maravilloso hasta lo mundano. A bordo de tu vehiculo espacial o terrestre,
+                        todo
+                        está al alcance de los exploradores.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <img src="img/SC_08_Wallpaper_2048x2048.jpg" alt="Nave">
+                    <h5>Crea</h5>
+                    <p>
+                        El universo espera. Crea actividades con tus amigos donde la creatividad es premiada con las
+                        mejores
+                        recompensas.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+        </div>
+
+        <div style="display: flex;align-items: center;margin: 15px;">
+
+            <div style="display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 5px;">
+
+                <iframe width="840" height="480" src="https://www.youtube.com/embed/nWm_OhIKms8?si=w4__yaBhM_EOurq_"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="newsletter">
+
+        <div class="contenedor">
+
+            <h3>
+                Recibi Novedades y Eventos
+            </h3>
+
+            <form action="envio.php" method="get">
+                <input type="email" name="correo" placeholder=" e-mail">
+                <button type="submit">Suscribite</button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="footerA">
+
+        <div style="float:left">
+
+            <tr>
+                <td>
+                    <a href="https://www.facebook.com/RobertsSpaceIndustries/" target="_blank">
+                        <img src="https://i.ibb.co/DwkGxJq/FbAl.png" alt="facebook" style="width: 55px;"></a>
+
+                    <a href="https://www.youtube.com/channel/UCTeLqJq1mXUX5WWoNXLmOIA" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://i.ibb.co/q7sTK2T/YtAl.png" alt="youtube" style="width: 55px;"> </a>
+
+                    <a href="https://www.instagram.com/robertsspaceind/" target="_blank">
+                        <img src="https://i.ibb.co/C0kfJP6/Insta-Alpha.png" alt="Instagram" style="width: 55px;"></a>
+
+                    <a href="https://twitter.com/RobertsSpaceInd" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i.ibb.co/XSXwYMm/twitter-1x.png" alt="twitter" style="width: 55px;"></a>
+
+                </td>
+            </tr>
+
+            <hr style="margin: 1em;">
+
+            <p>Diseño y Desarrollo Web copyright &copy; UADE 2023</p>
+
+            <p>
+                Alumno: Cantero Raul Ariel
+            </p>
+            <p>
+                Tecnicatura en Desarrollo de Software
+            </p>
+
+            <hr style="margin: 1em;">
+
+        </div>
+
+        <div style="float: right; width: 20em;">
+
+            <p>Armonía de Colores</p>
+            <br>
+            <div>
+                <!-- Coolors Palette Widget -->
+                <script src="https://coolors.co/palette-widget/widget.js"></script>
+                <script
+                    data-id="08405077105388468">new CoolorsPaletteWidget("08405077105388468", ["003547", "005e54", "001f33", "334752", "cfdee8"]); </script>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
