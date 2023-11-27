@@ -431,6 +431,8 @@ footer {
         margin: 10px;
     }
 
+
+
     /* Somos Media Query */
 
     #vidriera_somos h1 {
@@ -480,4 +482,27 @@ footer {
         width: 94%;
     }
 
+}
+
+
+/* ANIMACIONES */
+
+#main_vid {
+    animation: deslizar_izq_fade 1.5s;
+}
+
+/* @keyframes deslizar_izq {
+    from{transform: translateX(50%);}
+} */
+
+@keyframes deslizar_izq_fade {
+    0% {
+        opacity: 0;
+        transform: translatex(+150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0px);
+    }
 }
